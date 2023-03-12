@@ -1,10 +1,12 @@
 import { BsFillCartCheckFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
   return (
-    <div style={{ width: "20vh" }}>
-      <span>0</span>
-      <BsFillCartCheckFill size={30} title={"Carrito"} color={"#94b2a6"} />
+    <div>
+      <Link to="/cart">
+        <BsFillCartCheckFill size={24} title={"Carrito"} color={"white"} />
+      </Link>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import CartWidget from "../CartWidget/CartWidget";
 import style from "./Navbar.module.css";
 import NavbarList from "./NavbarList";
 
-const Navbar = () => {
+const Navbar = ({ children }) => {
   return (
     <header className={style.headerPrincipal}>
       <div className={style.container}>
@@ -15,6 +15,7 @@ const Navbar = () => {
         <NavbarList />
         <CartWidget />
       </div>
+      {children}
     </header>
   );
 };
